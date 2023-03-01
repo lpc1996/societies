@@ -1,0 +1,12 @@
+-- auto Generated on 2023-02-28
+-- DROP TABLE IF EXISTS role_menu;
+CREATE TABLE role_menu(
+	create_at DATETIME NOT NULL DEFAULT '1000-01-01 00:00:00' COMMENT '创建时间',
+	update_at DATETIME NOT NULL DEFAULT '1000-01-01 00:00:00' COMMENT '更新时间',
+	version INT (11) NOT NULL DEFAULT 1 COMMENT '数据版本，乐观锁使用',
+	id BIGINT (15) NOT NULL AUTO_INCREMENT COMMENT '自动生成的自增编号',
+	role_id INT (11) NOT NULL DEFAULT -1 COMMENT '角色编码',
+	menu_id INT (11) NOT NULL DEFAULT -1 COMMENT '用户ID',
+	deleted INT (11) NOT NULL DEFAULT -1 COMMENT '是否删除（用于逻辑删除插件过滤掉已被逻辑删除的数据）',
+	PRIMARY KEY (id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '角色权限表';

@@ -1,0 +1,4 @@
+{
+  "outPath": "./src/main/resources/static/doc",
+  "serverUrl": "http://127.0.0.1:1996/SocietiesSystem/"
+}

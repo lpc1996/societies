@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lpc.system1.mapper.DictMapper">
+  <resultMap id="BaseResultMap" type="com.lpc.system1.model.Dict">
+    <!--@mbg.generated-->
+    <!--@Table dict-->
+    <id column="dict_code" jdbcType="INTEGER" property="dictCode" />
+    <result column="create_at" jdbcType="TIMESTAMP" property="createAt" />
+    <result column="update_at" jdbcType="TIMESTAMP" property="updateAt" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="dict_label" jdbcType="VARCHAR" property="dictLabel" />
+    <result column="dict_value" jdbcType="VARCHAR" property="dictValue" />
+    <result column="dict_type" jdbcType="VARCHAR" property="dictType" />
+    <result column="css_class" jdbcType="VARCHAR" property="cssClass" />
+    <result column="id_default" jdbcType="INTEGER" property="idDefault" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    dict_code, create_at, update_at, version, sort, dict_label, dict_value, dict_type, 
+    css_class, id_default, `status`, remark, deleted
+  </sql>
+</mapper>
